@@ -40,9 +40,10 @@ technical/government/About_LSC/State_Planning_Special_Report.txt
 technical/government/About_LSC/Strategic_report.txt
 technical/government/About_LSC/commission_report.txt
 technical/government/About_LSC/conference_highlights.txt
-~~~
-This searches for the term "Indiana" in all txt files of About_LSC and puts all of them into a new file called government.txt. It then sorts them from least to most lines that contain "Indinana" from bottom to top. It's useful for searching info about "Indiana".
 ```
+
+This searches for the term "Indiana" in all txt files of About_LSC and puts all of them into a new file called government.txt. It then sorts them from least to most lines that contain "Indinana" from bottom to top. It's useful for searching info about "Indiana".
+
 
 ## 2. grep -c ##
 Example 1:
