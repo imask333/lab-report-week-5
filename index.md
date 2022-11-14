@@ -6,8 +6,8 @@
 Example 1:
 ```
 # code block 
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ grep -l "base pair" technich/docsearch$ al/plos/*.txt > plos-results.txt        
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ sort plos-results.txt      
+grep -l "base pair" technich/docsearch$ al/plos/*.txt > plos-results.txt        
+sort plos-results.txt      
 # output
 technical/plos/journal.pbio.0020190.txt 
 technical/plos/journal.pbio.0020223.txt 
@@ -18,9 +18,9 @@ This lines searches in all the files in the technical/plos/*.txt path to see if 
 Example 2:
 ```
 # code block
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ grep -l "base pair" technical/9
+grep -l "base pair" technical/9
 11report/*.txt >911report.txt
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ sort 911report.txt
+sort 911report.txt
 # output
 ```
 Searches for "base pair" in all the files in 911report, and if there's any, put them in a new file called 911report.txt, but the result returns nothing since no files in it contains "base pair". This is useful when we want to find a keyword or a definition much faster, like ctrl+f. 
@@ -28,11 +28,10 @@ Searches for "base pair" in all the files in 911report, and if there's any, put 
 Example 3:
 ```
 #code block
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ grep -l "Indiana" technical/government/About_LSC/*.txt > government.txt  
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ sort government.txt
-technical/government/About_LSC/Comments_on_semiannual.txt
-
+grep -l "Indiana" technical/government/About_LSC/*.txt > government.txt  
+sort government.txt
 #output
+technical/government/About_LSC/Comments_on_semiannual.txt
 technical/government/About_LSC/Progress_report.txt
 technical/government/About_LSC/Special_report_to_congress.txt
 technical/government/About_LSC/State_Planning_Report.txt
@@ -50,8 +49,7 @@ Example 1:
 grep -c
 ~~~
 # code block
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ grep -c "characteristics" techn
-ical/biomed//1471-2202-3-20.txt
+grep -c "characteristics" technical/biomed//1471-2202-3-20.txt
 #output
 2
 ~~~
@@ -60,7 +58,7 @@ This is printing out the number of liens that match the given string "characteri
 Example 2:
 ~~~
 # code block
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ grep -c "Antihypertensive" technical/biomed/1468-6708-3-7.txt              ihypertensive" technical/biomed/1468-6708-3-7.txt 
+grep -c "Antihypertensive" technical/biomed/1468-6708-3-7.txt              ihypertensive" technical/biomed/1468-6708-3-7.txt 
 # output
 2
 ~~~
@@ -69,7 +67,7 @@ grep-c prints out the lines in technical/biomed/1468-6708-3-10.txt that match wi
 Example 3:
 ~~~
 # code block
-h/docsearch$ grep -c "2001" technical/911report/*.txt
+grep -c "2001" technical/911report/*.txt
 #output
 technical/911report/chapter-1.txt:5     
 technical/911report/chapter-10.txt:5    
@@ -93,7 +91,7 @@ grep-c prints out all the lines in all the files .txt in 911report that contain 
 Example 1:
 ~~~
 # code block
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ grep -n "2001" technical/911report/preface.txt
+grep -n "2001" technical/911report/preface.txt
 #output
 11:                September 11, 2001, was a day of unprecedented shock and suffering in the history of
 18:                relating to the terrorist attacks of September 11, 2001," including those relating
@@ -103,7 +101,7 @@ grep - n shows the line number of file technical/911/preface.txt that contain "2
 Example 2:
 ~~~
 # code block
-phtn33@DESKTOP-VOADGL0:/mnt/c/Users/phanh/docsearch$ grep -n "MAdCAM-1" technical/biomed/*.txt
+grep -n "MAdCAM-1" technical/biomed/*.txt
 # output
 technical/biomed/1471-230X-1-5.txt:6:   
      MAdCAM-1 is a 60 kD endothelial cell adhesion molecule
@@ -308,7 +306,7 @@ technical/biomed/1471-2407-2-11.txt:459
 
  Example 3:
 ~~~
-h/docsearch$ grep -n "Five independent Salt Lake" technical/plos/*.txt
+grep -n "Five independent Salt Lake" technical/plos/*.txt
 # output
 ~~~
 This prints out nothing since no txt files in plos contain "Five independent Salt Lake"
